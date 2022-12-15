@@ -141,6 +141,7 @@ i.fa-level-down-alt {
 .inbox {
   background-color: #FFF;
   color: #000;
+  margin-top: 80px;
 }
 
 .inbox h2 {
@@ -219,19 +220,7 @@ i.fa-level-down-alt {
   box-shadow: 2px 2px 10px #000;
   transform: translateY(1px);
 }
-/* .controls button:active .fa-redo-alt {
-  transition: all 1s;
-  transform: rotate(360deg);
-  animation: refresh 1s linear;
-} */
-@keyframes refresh {
-  from {
-    transform: rotate(0deg);
-  } 
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 .controls button:hover {
   background: #00c497;
 }
@@ -261,7 +250,7 @@ input:focus{
   color: #FFF;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding: 5px 10px;
   font-size: 20px;  
 }
 /* .email-title {
@@ -295,4 +284,85 @@ input:focus{
   font-weight: bold;
   text-decoration: none;
   min-width: 120px;
+}
+
+/* CSS for tablet screens */
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+  
+  .email-box {
+    min-width: 600px;
+  }
+  #email {
+    font-size: 16px;
+  }
+  .email-header {
+    font-size: 14px;
+  }
+  .sender-info {
+    font-size: 14px;
+    
+  }
+  .email-txt {
+    font-size: 14px;
+    
+  }
+  .message-content {
+    min-width: 50%;
+    max-width: 100%;
+  }
+}
+
+/* CSS for mobile screens */
+@media only screen and (max-width: 639.9px) {
+  
+  .wrapper h1 {
+    font-size: 20px;
+  }
+  .email-content {
+    min-width: 95%;
+  }
+  .email-box {
+    min-width: 350px;
+  }
+  #email {
+    font-size: 12px;
+  }
+  .email-header {
+    font-size: 12px;
+  }
+  .sender-info {
+    font-size: 12px;
+    
+  }
+  .email-txt {
+    font-size: 12px;
+    
+  }
+  .message-content {
+    min-width: 300px;
+    max-width: 500px;
+    width: 350px;
+  }
+}
+
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+table {
+  table-layout:fixed;
+  width: 100px;
+}
+
+.btn {
+  padding: 10px;
+  background: rgba(110, 110, 110, 0.67);
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  border-radius: 20px;
+  margin: 10px;
+  transition: background-color 500ms;
 }

@@ -128,7 +128,7 @@ useEffect(() => {
   
 
   return (
-    <div className="App">
+    <div className="App" style={{overflowX: 'hidden'}}>
      <header className="wrapper">
         <h1>Your Temp Email Address</h1>
         <div className="email-box">
@@ -176,7 +176,7 @@ useEffect(() => {
           </div>
           <div className="email-txt"></div>
         </div>
-        <button onClick={() => setShowMessage(false)}>back</button>
+        <button className="btn" onClick={() => setShowMessage(false)}>back</button>
       </div>
      </div>
 
