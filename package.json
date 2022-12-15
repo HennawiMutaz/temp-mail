@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://HennawiMutaz.github.io/temp-mail",
+  "homepage": "https://hennawimutaz.github.io/temp-mail/",
   "eslintConfig": {
     "extends": [
       "react-app",
