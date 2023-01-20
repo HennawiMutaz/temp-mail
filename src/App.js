@@ -40,7 +40,7 @@ function App() {
     const response = await axios.get(`${api}/messages/${id}`, config);
     const message = response?.data;
     setCurrentMessage(message);
-    document.querySelector('.email-txt').innerHTML = message?.html;
+    document.querySelector('.email-txt').srcdoc = message?.html;
   }
 
   async function deleteAccount() {
@@ -174,7 +174,7 @@ useEffect(() => {
           <div className="sender-info">
           <strong><i className="fas fa-address-book"></i> Sender:</strong> <span>{currentMessage?.from?.address}</span>
           </div>
-          <div className="email-txt"></div>
+          <iframe style={{height:"600px", width:"100%", border:"none"}} className="email-txt"></iframe>
         </div>
         <button className="btn" onClick={() => setShowMessage(false)}>back</button>
       </div>
